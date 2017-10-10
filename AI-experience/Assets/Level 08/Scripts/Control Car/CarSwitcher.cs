@@ -34,11 +34,11 @@ public class CarSwitcher : MonoBehaviour
 
 			// Setup the new one.
 			Transform vehicleT = vehicles[m_VehicleId].transform;
-			Transform camRig = vehicleT.FindChild("CamRig");
+			Transform camRig = vehicleT.Find("CamRig");
 
-			m_DriftCamera.lookAtTarget = camRig.FindChild("CamLookAtTarget");
-			m_DriftCamera.positionTarget = camRig.FindChild("CamPosition");
-			m_DriftCamera.sideView = camRig.FindChild("CamSidePosition");
+			m_DriftCamera.lookAtTarget = camRig.Find("CamLookAtTarget");
+			m_DriftCamera.positionTarget = camRig.Find("CamPosition");
+			m_DriftCamera.sideView = camRig.Find("CamSidePosition");
 		}
 
 		if (Input.GetKeyUp(KeyCode.R))

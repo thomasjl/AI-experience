@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Camaro
+  - LeftPike
+  - RightPike
+  - GameManager
   layers:
   - Default
   - TransparentFX

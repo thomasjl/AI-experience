@@ -48,6 +48,7 @@ GameObject:
   m_Component:
   - component: {fileID: 432090}
   - component: {fileID: 11187624}
+  - component: {fileID: 114895915042666556}
   m_Layer: 0
   m_Name: Pf_GreatAxeTrap
   m_TagString: Untagged
@@ -87,9 +88,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 132090}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -6.9, y: 19.95, z: 2.4612277}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -6.9, y: 20.14, z: 2.4612277}
+  m_LocalScale: {x: 1, y: 1, z: 1.860001}
   m_Children:
   - {fileID: 432088}
   - {fileID: 432086}
@@ -186,7 +187,7 @@ Animation:
   m_Animations:
   - {fileID: 7400000, guid: 99dcd95039050ad46bcd5884c4a68665, type: 2}
   m_WrapMode: 0
-  m_PlayAutomatically: 1
+  m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
 --- !u!1001 &100100000
@@ -200,6 +201,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 132090}
   m_IsPrefabParent: 1
+--- !u!114 &114895915042666556
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9576174502961e4489c101a3c8cac6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &136055429414407930
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -209,7 +221,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.27
+  m_Radius: 0.39
   m_Height: 5.18
   m_Direction: 0
   m_Center: {x: 0, y: -3.04, z: 0.000000044703494}
@@ -222,7 +234,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.27
+  m_Radius: 0.39
   m_Height: 2.06
   m_Direction: 0
   m_Center: {x: 0, y: -4.36, z: 0.000000044703494}
@@ -235,7 +247,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.27
+  m_Radius: 0.39
   m_Height: 4.64
   m_Direction: 0
   m_Center: {x: 0, y: -3.53, z: 0.000000044703494}
@@ -248,7 +260,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.27
+  m_Radius: 0.39
   m_Height: 3.63
   m_Direction: 0
   m_Center: {x: 0, y: -4, z: 0.000000044703494}
@@ -261,7 +273,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.27
+  m_Radius: 0.39
   m_Height: 5.48
   m_Direction: 0
   m_Center: {x: 0, y: -2.45, z: 0.000000044703494}

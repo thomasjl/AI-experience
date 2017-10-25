@@ -69,7 +69,7 @@ public class Door : MonoBehaviour {
 
    
         
-
+    /*
     void OnTriggerEnter (Collider other)
     {
         if (other.tag == "Player" && (!elevator.GetComponent<Elevator>().arrived))
@@ -88,6 +88,7 @@ public class Door : MonoBehaviour {
 
     }
 
+
     IEnumerator waitAnimationCloseDoor()
     {
         yield return new WaitForSeconds(2);
@@ -105,4 +106,5 @@ public class Door : MonoBehaviour {
 
 
     }
+    */
 }

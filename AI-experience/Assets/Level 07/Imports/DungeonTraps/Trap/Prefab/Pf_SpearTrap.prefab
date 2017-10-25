@@ -43,6 +43,8 @@ GameObject:
   - component: {fileID: 442850}
   - component: {fileID: 3342848}
   - component: {fileID: 2342848}
+  - component: {fileID: 65325969027966228}
+  - component: {fileID: 114595286490541568}
   m_Layer: 0
   m_Name: Spear
   m_TagString: Untagged
@@ -56,15 +58,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 142846}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.37, y: 0, z: 0}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -48.69, y: 25.57, z: -38.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 442848}
   - {fileID: 442850}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!4 &442848
 Transform:
   m_ObjectHideFlags: 1
@@ -195,3 +197,26 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 142846}
   m_IsPrefabParent: 1
+--- !u!65 &65325969027966228
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 142850}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25792786, y: 3.0811574, z: 0.16661756}
+  m_Center: {x: 0, y: -0.46100223, z: -0.000000018626455}
+--- !u!114 &114595286490541568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 142850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 066720429f26fca42af68d2654bad563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

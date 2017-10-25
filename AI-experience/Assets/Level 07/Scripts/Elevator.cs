@@ -24,7 +24,7 @@ public class Elevator : MonoBehaviour {
         inside = false;
         goUp = false;
         goDown = false;
-        doorClosed = true;
+        doorClosed = false;
 
         downPosition = transform.position;
         upPosition = transform.position + new Vector3(0, 15f, 0);
@@ -54,6 +54,7 @@ public class Elevator : MonoBehaviour {
 
 
         }
+
     }
 
     void OnTriggerEnter (Collider other)
@@ -69,6 +70,7 @@ public class Elevator : MonoBehaviour {
             //other.transform.localEulerAngles = tempRot;
 
             goUp = true;
+            door.GetComponent<Door>().closing = true;
         }
        
     }

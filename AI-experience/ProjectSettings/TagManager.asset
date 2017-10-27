@@ -8,6 +8,7 @@ TagManager:
   - LeftPike
   - RightPike
   - GameManager
+  - StoneSphere
   layers:
   - Default
   - TransparentFX

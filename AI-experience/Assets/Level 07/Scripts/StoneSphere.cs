@@ -6,6 +6,8 @@ public class StoneSphere : MonoBehaviour {
 
     private GameObject gameManager;
     private GameObject player;
+
+    public GameObject task;
 	
 
     void Start()
@@ -28,5 +30,7 @@ public class StoneSphere : MonoBehaviour {
     {
         yield return new WaitForSeconds(2);
         gameManager.GetComponent<GameManager>().playerDie();
+        task.GetComponent<LaunchBalls>().ballLaunched = false;
+        Destroy(this);
     }
 }

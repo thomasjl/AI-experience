@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
+    public Vector3 playerRespawn;
+
     private GameObject player;
 
     private Vector3 startPositionPlayer;
@@ -11,6 +13,7 @@ public class GameManager : MonoBehaviour {
     void Start ()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        playerRespawn = player.transform.position;
         startPositionPlayer = player.transform.position;
     }
 
@@ -21,7 +24,7 @@ public class GameManager : MonoBehaviour {
 
     public void playerDie()
     {
-        player.transform.position = startPositionPlayer;
+        player.transform.position = playerRespawn;
         MonoBehaviour scriptPlayer = player.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>();
         scriptPlayer.enabled = true;
     }

@@ -19,6 +19,8 @@ public class Elevator : MonoBehaviour {
 
     public bool arrived;
 
+    private bool firstEnter;
+
     void Start ()
     {
         inside = false;
@@ -29,6 +31,8 @@ public class Elevator : MonoBehaviour {
         downPosition = transform.position;
         upPosition = transform.position + new Vector3(0, 15f, 0);
         arrived = false;
+
+        firstEnter = true;
 
     }
 
@@ -59,7 +63,7 @@ public class Elevator : MonoBehaviour {
 
     void OnTriggerEnter (Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && firstEnter)
         {
            
             inside = true;
@@ -70,6 +74,7 @@ public class Elevator : MonoBehaviour {
             //other.transform.localEulerAngles = tempRot;
 
             goUp = true;
+            firstEnter = false;
             door.GetComponent<Door>().closing = true;
         }
        

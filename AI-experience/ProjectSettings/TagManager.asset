@@ -9,6 +9,7 @@ TagManager:
   - RightPike
   - GameManager
   - StoneSphere
+  - BallManager
   layers:
   - Default
   - TransparentFX

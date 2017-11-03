@@ -7,13 +7,17 @@ public class StoneSphere : MonoBehaviour {
     private GameObject gameManager;
     private GameObject player;
 
-    public GameObject task;
+    private GameObject task;
 	
+    public bool touchPlayer;
 
     void Start()
     {       
         gameManager = GameObject.FindGameObjectWithTag("GameManager");
         player = GameObject.FindGameObjectWithTag("Player");
+        task = GameObject.FindGameObjectWithTag("BallManager");
+
+        touchPlayer = false;
     }
 
     void OnTriggerEnter( Collider other)
@@ -27,10 +31,15 @@ public class StoneSphere : MonoBehaviour {
     }
 
     IEnumerator PlayerDie()
-    {
-        yield return new WaitForSeconds(2);
-        gameManager.GetComponent<GameManager>().playerDie();
+    {      
         task.GetComponent<LaunchBalls>().ballLaunched = false;
-        Destroy(this);
+        touchPlayer = true;
+
+        yield return new WaitForSeconds(2);
+
+        gameManager.GetComponent<GameManager>().playerDie();
+       
+
+        Destroy(gameObject);
     }
 }

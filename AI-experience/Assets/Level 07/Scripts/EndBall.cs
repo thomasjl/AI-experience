@@ -16,8 +16,12 @@ public class EndBall : MonoBehaviour {
     {
         if (other.tag == "StoneSphere")
         {
-            task.GetComponent<LaunchBalls>().LaunchBall();
-            Destroy(other.gameObject);
+            if (!other.gameObject.GetComponent<StoneSphere>().touchPlayer)
+            {
+                task.GetComponent<LaunchBalls>().LaunchBall();
+                Destroy(other.gameObject);
+            }
+
         }
     }
 

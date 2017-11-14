@@ -4983,8 +4983,8 @@ WheelCollider:
   m_Center: {x: 0, y: 0, z: 0}
   m_Radius: 0.38
   m_SuspensionSpring:
-    spring: 45475.56
-    damper: 7276.0894
+    spring: 45475.566
+    damper: 7276.091
     targetPosition: 0.5
   m_SuspensionDistance: 0.19620001
   m_ForceAppPointDistance: 0.4827334
@@ -6603,8 +6603,8 @@ WheelCollider:
   m_Center: {x: 0, y: 0, z: 0}
   m_Radius: 0.38
   m_SuspensionSpring:
-    spring: 54652.324
-    damper: 8744.372
+    spring: 54652.562
+    damper: 8744.41
     targetPosition: 0.5
   m_SuspensionDistance: 0.19620001
   m_ForceAppPointDistance: 0.4927334
@@ -8889,8 +8889,8 @@ Transform:
   m_PrefabParentObject: {fileID: 400028, guid: c891e8a5e5b5d13488ec565680e7b622, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 933030428}
-  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: 61.1, y: 1.51, z: 109}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.8, y: 1.51, z: 17.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1284915550}
@@ -8901,7 +8901,7 @@ Transform:
   - {fileID: 839819470}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &933030431
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15898,8 +15898,8 @@ WheelCollider:
   m_Center: {x: 0, y: 0, z: 0}
   m_Radius: 0.38
   m_SuspensionSpring:
-    spring: 45344.89
-    damper: 7255.182
+    spring: 45344.65
+    damper: 7255.144
     targetPosition: 0.5
   m_SuspensionDistance: 0.19620003
   m_ForceAppPointDistance: 0.50273335

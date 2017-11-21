@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Camaro
+  - LeftPike
+  - RightPike
+  - GameManager
+  - StoneSphere
+  - BallManager
   layers:
   - Default
   - TransparentFX

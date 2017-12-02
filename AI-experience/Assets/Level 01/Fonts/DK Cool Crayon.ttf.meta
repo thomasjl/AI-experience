@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 59ed1e4e75c9b4b36b0155a5c987e142
+timeCreated: 1511696269
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: DK Cool Crayon
+  fontNames:
+  - DK Cool Crayon
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -9,16 +9,23 @@ public class ProblemInstance {
 	public string text_to_decode = "";
 	public string encoded_text = "";
 	public int[] rotors_values = new int[Decoder.nb_rotors];
+	public string[] enigm_texts;
+	public string[] enigm_answers;
+	public string[] enigm_player_answers;
 	public Rotor decoder = new Rotor();
 	public Rotor encoder = new Rotor();
 
 
-	public ProblemInstance (string text_to_decode, int[] rotors_values) {
+	public ProblemInstance (string text_to_decode, int[] rotors_values, string[] enigm_texts, string[] enigm_answers) {
 		this.text_to_decode = text_to_decode;
 		this.rotors_values = rotors_values;
 		this.decoder = this.BuildDecoder ();
 		this.encoder = this.BuildEncoder ();
 		this.encoded_text = this.EncodeText ();
+
+		this.enigm_texts = enigm_texts;
+		this.enigm_answers = enigm_answers;
+		this.enigm_player_answers = new string[]{ "", "", "", "" };
 	}
 
 	private Rotor BuildDecoder() {

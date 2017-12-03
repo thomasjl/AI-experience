@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class CanvasRotorsControl : MonoBehaviour {
 
 
+	public Text saved_text;
 	public Text enigm;
 	public Text answer;
 	public GameControlLevel1 game_control_level_1;
@@ -19,6 +20,7 @@ public class CanvasRotorsControl : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		this.saved_text.enabled = false;
 		this.enigm_texts = game_control_level_1.problem_instance.enigm_texts;
 		this.enigm_answers = game_control_level_1.problem_instance.enigm_answers;
 		this.enigm_player_answers = game_control_level_1.problem_instance.enigm_player_answers;
@@ -50,7 +52,8 @@ public class CanvasRotorsControl : MonoBehaviour {
 	public void LoadEnigm(int enigmNumber) {
 		this.current_enigm_number = enigmNumber - 1;
 
-		this.enigm.text = "ENIGME " + enigmNumber + "\n\n";
+		this.enigm.text = "énigme ".ToUpper() + enigmNumber + "\n";
+		this.enigm.text = this.enigm.text + "Répondez à l'énigme pour calibrer le rotor numéro ".ToUpper() + enigmNumber + "\n\n\n";
 		this.enigm.text = this.enigm.text + this.enigm_texts[this.current_enigm_number];
 
 		this.answer.text = this.enigm_player_answers [this.current_enigm_number];
@@ -59,8 +62,27 @@ public class CanvasRotorsControl : MonoBehaviour {
 
 
 	public void SaveAnswer() {
+		if (this.answer.text == "") {
+			string saved_message = "Vous devez répondre à l'énigme à l'aide de votre clavier avant de sauvegarder la valeur et ainsi calibrer le rotor";
+			StartCoroutine (ShowSavedMessage (saved_message, 4));
+		}
+		else {
+			string saved_message = "Le rotor numéro " + (this.current_enigm_number + 1) + " a bien été calibré avec la valeur " + this.answer.text + ".";
+			StartCoroutine (ShowSavedMessage (saved_message, 2));
+		}
+
 		this.enigm_player_answers [this.current_enigm_number] = this.answer.text;
 		this.UpdateRotorValue ();
+
+	}
+
+	IEnumerator ShowSavedMessage (string message, float delay) {
+		this.saved_text.text = message;
+		this.enigm.enabled = false;
+		this.saved_text.enabled = true;
+		yield return new WaitForSeconds(delay);
+		this.saved_text.enabled = false;
+		this.enigm.enabled = true;
 	}
 
 

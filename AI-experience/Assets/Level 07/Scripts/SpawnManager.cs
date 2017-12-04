@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour {
 
     public GameObject spawnSecondTask;
-   
+      
     private bool hasEverEntered;
 
     void Start()

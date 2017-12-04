@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 65522857529651150}
   m_Layer: 0
   m_Name: Props_TrashcanOpen
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63,7 +63,7 @@ GameObject:
   - component: {fileID: 54570811144300638}
   m_Layer: 0
   m_Name: Props_Garbage (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82,7 +82,7 @@ GameObject:
   - component: {fileID: 54160046137530220}
   m_Layer: 0
   m_Name: Props_Garbage
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

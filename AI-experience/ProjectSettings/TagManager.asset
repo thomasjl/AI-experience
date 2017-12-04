@@ -10,6 +10,8 @@ TagManager:
   - GameManager
   - StoneSphere
   - BallManager
+  - FourthTask
+  - Obstacle
   layers:
   - Default
   - TransparentFX

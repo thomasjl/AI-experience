@@ -5,10 +5,12 @@ using UnityEngine;
 public class Lightning : MonoBehaviour {
 
     public GameObject pointToRotateOn;
-    public float speed;
+    public float speed;   
+
     private AudioSource audio;
     private GameObject player;
     private GameObject gameManager;
+    private GameObject fourthTask;
 
     void Start()
     {
@@ -16,6 +18,7 @@ public class Lightning : MonoBehaviour {
         audio = GetComponent<AudioSource>();
         player = GameObject.FindGameObjectWithTag("Player");
         gameManager = GameObject.FindGameObjectWithTag("GameManager");
+        fourthTask = GameObject.FindGameObjectWithTag("FourthTask");
     }
 
     void Update()
@@ -28,11 +31,14 @@ public class Lightning : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
+            
             Debug.Log("being electrocuted");
             audio.Play();
             MonoBehaviour scriptPlayer = player.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>();
             scriptPlayer.enabled = false;
             StartCoroutine("PlayerDie");
+
+            fourthTask.GetComponent<DisableFourthTask>().attemptNumber++;
 
         }
     }

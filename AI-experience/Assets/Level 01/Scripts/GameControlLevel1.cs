@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Text;
+using UnityEngine.SceneManagement;
 
 public class GameControlLevel1 : MonoBehaviour {
 
@@ -97,6 +98,10 @@ public class GameControlLevel1 : MonoBehaviour {
 					break;
 				}		
 			}
+		}
+
+		if (this.decoded_text.text == this.problem_instance.text_to_decode) {
+			this.GameIsWon ();
 		}
 	}
 
@@ -212,5 +217,10 @@ public class GameControlLevel1 : MonoBehaviour {
 			}
 			i++;
 		}
+	}
+
+
+	public void GameIsWon() {
+		
 	}
 }

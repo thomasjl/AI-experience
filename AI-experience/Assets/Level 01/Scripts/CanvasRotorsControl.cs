@@ -12,14 +12,18 @@ public class CanvasRotorsControl : MonoBehaviour {
 	public GameControlLevel1 game_control_level_1;
 
 	public Button button_save;
+	public Button button_help_enigm;
 
 	public int current_enigm_number = 0;
 	string[] enigm_texts;
 	string[] enigm_answers;
 	string[] enigm_player_answers;
 
+	public int[] try_counter = new int[Decoder.nb_rotors];
+
 	// Use this for initialization
 	void Start () {
+		this.button_help_enigm.interactable = false;
 		this.saved_text.enabled = false;
 		this.enigm_texts = game_control_level_1.problem_instance.enigm_texts;
 		this.enigm_answers = game_control_level_1.problem_instance.enigm_answers;
@@ -44,6 +48,14 @@ public class CanvasRotorsControl : MonoBehaviour {
 				this.answer.text = this.answer.text.Substring (0, this.answer.text.Length - 1);
 			}
 		}
+
+
+		if (this.try_counter [this.current_enigm_number] > 3) {
+			this.button_help_enigm.interactable = true;
+		} else {
+			this.button_help_enigm.interactable = false;
+		}
+
 	}
 
 
@@ -67,13 +79,17 @@ public class CanvasRotorsControl : MonoBehaviour {
 			StartCoroutine (ShowSavedMessage (saved_message, 4));
 		}
 		else {
+			this.enigm_player_answers [this.current_enigm_number] = this.answer.text;
+			this.UpdateRotorValue ();
+			this.try_counter [this.current_enigm_number]++;
 			string saved_message = "Le rotor numéro " + (this.current_enigm_number + 1) + " a bien été calibré avec la valeur " + this.answer.text + ".";
-			StartCoroutine (ShowSavedMessage (saved_message, 2));
+			if (this.enigm_player_answers [this.current_enigm_number] == this.enigm_answers [this.current_enigm_number]) {
+				saved_message = saved_message + "\n\n" + "PS : Ceci est la bonne réponse";
+			} else {
+				saved_message = saved_message + "\n\n" + "PS : Ceci n'est pas la bonne réponse";
+			}
+			StartCoroutine (ShowSavedMessage (saved_message, 3));
 		}
-
-		this.enigm_player_answers [this.current_enigm_number] = this.answer.text;
-		this.UpdateRotorValue ();
-
 	}
 
 	IEnumerator ShowSavedMessage (string message, float delay) {
@@ -83,6 +99,12 @@ public class CanvasRotorsControl : MonoBehaviour {
 		yield return new WaitForSeconds(delay);
 		this.saved_text.enabled = false;
 		this.enigm.enabled = true;
+	}
+
+
+	public void GetHelpForEnigm(){
+		string message = "La réponse est " + this.enigm_answers [this.current_enigm_number];
+		StartCoroutine (ShowSavedMessage (message, 2));
 	}
 
 

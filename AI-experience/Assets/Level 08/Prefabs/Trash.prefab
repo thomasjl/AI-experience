@@ -19,6 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4013437759528850}
+  - component: {fileID: 114630276133036116}
   m_Layer: 0
   m_Name: Trash
   m_TagString: Untagged
@@ -42,6 +43,7 @@ GameObject:
   - component: {fileID: 65189700822592442}
   - component: {fileID: 65011889203224330}
   - component: {fileID: 65522857529651150}
+  - component: {fileID: 114843253716852358}
   m_Layer: 0
   m_Name: Props_TrashcanOpen
   m_TagString: Obstacle
@@ -61,6 +63,7 @@ GameObject:
   - component: {fileID: 23762404077352938}
   - component: {fileID: 136991693342384448}
   - component: {fileID: 54570811144300638}
+  - component: {fileID: 114706627353598672}
   m_Layer: 0
   m_Name: Props_Garbage (1)
   m_TagString: Obstacle
@@ -80,6 +83,7 @@ GameObject:
   - component: {fileID: 23203093723310124}
   - component: {fileID: 136014736742141274}
   - component: {fileID: 54160046137530220}
+  - component: {fileID: 114057885668323554}
   m_Layer: 0
   m_Name: Props_Garbage
   m_TagString: Obstacle
@@ -364,6 +368,50 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.00080031884, y: 0.016746972, z: 0.0116166305}
   m_Center: {x: -0.005408156, y: 0.008373486, z: -0.0000000048418998}
+--- !u!114 &114057885668323554
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1598616810088290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d781512dfa8b6c479a0ba024f5bdf95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114630276133036116
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1140877090849704}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d781512dfa8b6c479a0ba024f5bdf95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114706627353598672
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1526036867378664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d781512dfa8b6c479a0ba024f5bdf95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114843253716852358
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1386533373834440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d781512dfa8b6c479a0ba024f5bdf95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &136014736742141274
 CapsuleCollider:
   m_ObjectHideFlags: 1

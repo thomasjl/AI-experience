@@ -19,6 +19,7 @@ public class CanvasRotorsControl : MonoBehaviour {
 	string[] enigm_answers;
 	string[] enigm_player_answers;
 
+
 	public int[] try_counter = new int[Decoder.nb_rotors];
 
 	// Use this for initialization
@@ -55,6 +56,14 @@ public class CanvasRotorsControl : MonoBehaviour {
 		} else {
 			this.button_help_enigm.interactable = false;
 		}
+
+		if (Input.GetKeyDown (KeyCode.Mouse0)) {
+			if (this.saved_text.enabled) {
+				this.saved_text.enabled = false;
+				this.enigm.enabled = true;
+			}
+		}
+			
 
 	}
 

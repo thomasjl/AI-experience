@@ -10,6 +10,7 @@ public class Lvl8GameManager : MonoBehaviour {
     public Vector3 checkpointRot;
 
     public Text damageTakenText;
+    public Text speedText;
 
     private Rigidbody rbCamaro;
 
@@ -29,7 +30,10 @@ public class Lvl8GameManager : MonoBehaviour {
 
     void Update()
     {
+        speedText.text = Mathf.Abs(Mathf.Round(rbCamaro.velocity.z * 3.6f)) + "";
+
         damageTakenText.text = "Dégâts reçus : " + damageTaken;
+
         // revient au dernier checkpoint, quand press "entrée"
         if (Input.GetKeyDown(KeyCode.Return))
         {

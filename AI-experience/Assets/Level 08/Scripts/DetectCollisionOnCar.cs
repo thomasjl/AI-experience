@@ -12,7 +12,11 @@ public class DetectCollisionOnCar : MonoBehaviour {
         gameManager.GetComponent<Lvl8GameManager>().damageTaken++;
         Debug.Log("detect collision");
 
-        collision.gameObject.GetComponent<ReturnToStarPosition>().enabled = true;
+        if (collision.gameObject.GetComponent<ReturnToStarPosition>() != null)
+        {
+            collision.gameObject.GetComponent<ReturnToStarPosition>().enabled = true;
+        }
+
 
         foreach (ContactPoint contact in collision.contacts)
         {          

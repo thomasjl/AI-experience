@@ -18,7 +18,7 @@ public class ReturnToStarPosition : MonoBehaviour {
         startRot = transform.eulerAngles;
 
         gameManager = GameObject.FindGameObjectWithTag("GameManager");
-        Debug.Log("start pos : " + transform.position.x);
+        //Debug.Log("start pos : " + transform.position.x);
         goToStartPos = false;
     }
 
@@ -31,13 +31,20 @@ public class ReturnToStarPosition : MonoBehaviour {
 
             StartCoroutine("setBooleanToFalse");
 
-            Debug.Log("return to start position");
+            //Debug.Log("return to start position");
 
             GetComponent<Rigidbody>().isKinematic = true;
             transform.position = startPos;
 
-            Debug.Log("starttransform apres : " + startPos.x);
+            //Debug.Log("starttransform apres : " + startPos.x);
             transform.eulerAngles = startRot;
+
+            //arret de l'eau, si c'est une lance a incendie
+            if (GetComponent<LaunchWater>() != null)
+            {
+                Destroy(GetComponent<LaunchWater>().waterInstance);
+            }
+
 
 
         }

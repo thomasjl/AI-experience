@@ -188,7 +188,8 @@ public class GameControlLevel1 : MonoBehaviour {
 	public void ButtonContinuerAction(){
 
 		if (this.game_won) {
-			this.explication_text.text = this.explication_text.text + "\n GAME IS WON...";
+			//this.explication_text.text = this.explication_text.text + "\n GAME IS WON...";
+			SceneManager.LoadScene ("Level Transition");
 		} else {
 			if (this.first_time) {
 				this.first_time = false;
@@ -229,9 +230,12 @@ public class GameControlLevel1 : MonoBehaviour {
 
 	public void GameIsWon() {
 		this.game_won = true;
+		GlobalVariables.nextLevel = "Level 02";
+		GlobalVariables.previousLevel = "Level 01";
+
 		this.SwitchToCanvasIntro ();
+		this.intro_button.GetComponentInChildren<Text>().text = "Niveau 02";
 		string game_won_message = "FÉLICITATIONS ! \n\nGRÂCE À VOUS, LE MESSAGE ALLEMAND A PU ÊTRE DÉCODÉ À TEMPS ET DES MILLIERS DE VIES ON ÉTÉ SAUVÉES !";
 		StartCoroutine(this.AnimateTextInto (game_won_message));
-
 	}
 }

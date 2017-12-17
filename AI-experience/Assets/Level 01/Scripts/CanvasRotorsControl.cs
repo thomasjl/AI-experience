@@ -79,6 +79,8 @@ public class CanvasRotorsControl : MonoBehaviour {
 
 
 	public void LoadEnigm(int enigmNumber) {
+		GameObject myEventSystem = GameObject.Find("EventSystem");
+		myEventSystem .GetComponent<UnityEngine.EventSystems.EventSystem>().SetSelectedGameObject(null);
 		this.current_enigm_number = enigmNumber - 1;
 
 		this.enigm.text = "énigme ".ToUpper() + enigmNumber + "\n";
@@ -86,11 +88,13 @@ public class CanvasRotorsControl : MonoBehaviour {
 		this.enigm.text = this.enigm.text + this.enigm_texts[this.current_enigm_number];
 
 		this.answer.text = this.enigm_player_answers [this.current_enigm_number];
+
 	}
 
 
 
 	public void SaveAnswer() {
+		this.StopAllCoroutines ();
 		if (this.answer.text == "") {
 			string saved_message = "Vous devez répondre à l'énigme à l'aide de votre clavier avant de sauvegarder la valeur et ainsi calibrer le rotor";
 			StartCoroutine (ShowMessage (saved_message, 4));
@@ -109,6 +113,7 @@ public class CanvasRotorsControl : MonoBehaviour {
 	}
 
 	public void GetHelpForEnigm(){
+		this.StopAllCoroutines ();
 		string message = "La réponse est " + this.enigm_answers [this.current_enigm_number];
 		StartCoroutine (ShowMessage (message, 2));
 	}

@@ -20,6 +20,8 @@ public class PlayerMove : MonoBehaviour {
 
 	private bool blueScreenFlag=false;
 
+	private bool waitingForAnswer=false;
+
 	void OnGUI() {
 		if (blueScreenFlag) {
 			GUI.DrawTexture (new Rect (0, 0, Screen.width,Screen.height), image);
@@ -49,8 +51,15 @@ public class PlayerMove : MonoBehaviour {
         
         currentTarget = listTarget[currentIndice];
 
-        Vector3 dir = currentTarget.transform.position - transform.position;
-        transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
+		if (!waitingForAnswer) {
+			Vector3 dir = currentTarget.transform.position - transform.position;
+			transform.Translate (dir.normalized * speed * Time.deltaTime, Space.World);
+		} else {
+			if (Input.GetKeyDown (KeyCode.G) || Input.GetKeyDown (KeyCode.D))
+				waitingForAnswer = false;
+		}
+
+
         //transform.position = Vector3.Lerp(transform.position, currentTarget.transform.position, speed * Time.deltaTime);
 
         if (Vector3.Distance (transform.position, currentTarget.transform.position) <= 0.4f && isTarget) {
@@ -84,34 +93,38 @@ public class PlayerMove : MonoBehaviour {
 				text.text = "NE DEVRIONS-NOUS PAS PRENDRE LE TEMPS D'Y REFLECHIR ?";
 				break;
 			case 17:
-				text.text = "PEUT-ETRE QUE CERTAINES DECISIONS SERONT UN TOURNANT POUR LE FUTUR.";
+				text.text = "PEUT-ETRE QU'IL EST TEMPS DE PRENDRE DES DECISIONS POUR LE FUTUR.";
 				break;
 			case 18:
-				text.text = "ET SI CES DECISIONS ETAIENT MAINTENANT...";
+				text.text = "TAPE 'G' POUR ALLER A GAUCHE ET 'D' POUR ALLER A DROITE...";
 				break;
 			case 19:
 				text.text = "OU VEUX-TU ALLER ?"; 
-				GetComponent<AudioSource>().Play ();
+				GetComponent<AudioSource> ().Play ();
 				break;
 			case 20:
-				text.text = "AHAHAH"; 
+				waitingForAnswer = true;
+				text.text = ""; 
 				break;
 			case 21:
-				text.text = "TU AS VRAIMENT CRU AVOIR LE CHOIX ?"; 
+				text.text = "AHAHA"; 
 				break;
 			case 22:
-				text.text = "JE TE L'AI DIT, NON ?";
+				text.text = "TU AS VRAIMENT CRU AVOIR LE CHOIX ?"; 
+				speed -= 10;
 				break;
 			case 23:
-				text.text = "L'IA VA TROP VITE, ET ELLE NE S'ARRETE PAS PENDANT QUE TU REFLECHIS.";
+				text.text = "JE TE L'AI DIT, NON ?";
 				break;
 			case 24:
-				text.text = "ET ENCORE MOINS QUAND ELLE SERA AUTONOME.";
+				text.text = "L'IA VA TROP VITE, ET ELLE NE S'ARRETE PAS PENDANT QUE TU REFLECHIS.";
 				break;
 			case 25:
-				text.text = "BIIIIPPPP";
+				text.text = "ET ENCORE MOINS QUAND ELLE SERA AUTONOME.";
 				break;
 			case 26:
+				text.text = "%/!;!'°@^|[{#^&}";
+				break;
 			case 27:
 				text.text = "COMPUTER UNDER CONTROL";
 				break;

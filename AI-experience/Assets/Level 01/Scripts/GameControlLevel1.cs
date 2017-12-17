@@ -21,12 +21,14 @@ public class GameControlLevel1 : MonoBehaviour {
 
 	public Texture2D hand_cursor;
 
-	string intro_message = "28 JUIN 1942.\n\nVOUS AVEZ MIS LA MAIN SUR UNE MACHINE D'ENCRYPTAGE ALLEMANDE ENIGMA.\n\nVOTRE MISSION EST DE L'UTILISER AFIN DE DECODER LE MESSAGE INTERCEPTE PAR LA RESISTANCE.\n\nDES VIES SONT EN JEU, FAITES VITE !";
+	string intro_message = "3 OCTOBRE 1942.\n\nVOUS AVEZ MIS LA MAIN SUR UNE MACHINE D'ENCRYPTAGE ALLEMANDE ENIGMA.\n\nVOTRE MISSION EST DE L'UTILISER AFIN DE DÉCODER LE MESSAGE INTERCEPTÉ PAR LA RÉSISTANCE.\n\nDES VIES SONT EN JEU, FAITES VITE !";
 
 	public ProblemInstance problem_instance;
 
 	public AudioSource typewriter_sound;
 	public AudioSource typewriter_sound_carriage_return;
+
+	bool game_won = false;
 
 	private KeyCode[] desired_keys = {
 		KeyCode.A, KeyCode.B, KeyCode.C, KeyCode.D, KeyCode.E, 
@@ -67,7 +69,7 @@ public class GameControlLevel1 : MonoBehaviour {
 		this.text_to_decode.text = this.problem_instance.encoded_text;
 
 		this.SwitchToCanvasIntro ();
-		StartCoroutine(this.AnimateTextInto ());
+		StartCoroutine(this.AnimateTextInto (this.intro_message));
 	}
 	
 	// Update is called once per frame
@@ -184,11 +186,16 @@ public class GameControlLevel1 : MonoBehaviour {
 
 
 	public void ButtonContinuerAction(){
-		if (this.first_time) {
-			this.first_time = false;
-			this.SwitchToCanvasHelp ();
+
+		if (this.game_won) {
+			this.explication_text.text = this.explication_text.text + "\n GAME IS WON...";
 		} else {
-			this.SwitchToCanvasRoom ();
+			if (this.first_time) {
+				this.first_time = false;
+				this.SwitchToCanvasHelp ();
+			} else {
+				this.SwitchToCanvasRoom ();
+			}
 		}
 	}
 
@@ -196,15 +203,15 @@ public class GameControlLevel1 : MonoBehaviour {
 		
 	}
 
-	IEnumerator AnimateTextInto() {
+	IEnumerator AnimateTextInto(string message_to_animate) {
 		this.explication_text.text = "";
 		int i = 0;
 		yield return new WaitForSeconds(1F);
-		while( i < this.intro_message.Length ){
-			this.explication_text.text = this.explication_text.text + this.intro_message[i];
+		while( i < message_to_animate.Length ){
+			this.explication_text.text = this.explication_text.text + message_to_animate [i];
 
 			if (this.canvasIntro.activeSelf) {
-				if (this.intro_message [i] == '\n') {
+				if (message_to_animate [i] == '\n') {
 					this.typewriter_sound_carriage_return.Stop ();
 					this.typewriter_sound_carriage_return.Play ();
 					yield return new WaitForSeconds(.7F);
@@ -221,6 +228,10 @@ public class GameControlLevel1 : MonoBehaviour {
 
 
 	public void GameIsWon() {
-		
+		this.game_won = true;
+		this.SwitchToCanvasIntro ();
+		string game_won_message = "FÉLICITATIONS ! \n\nGRÂCE À VOUS, LE MESSAGE ALLEMAND A PU ÊTRE DÉCODÉ À TEMPS ET DES MILLIERS DE VIES ON ÉTÉ SAUVÉES !";
+		StartCoroutine(this.AnimateTextInto (game_won_message));
+
 	}
 }

@@ -8,21 +8,30 @@ public class NearFrontDoor : MonoBehaviour {
     public GameObject gameManager;
     public Text nextLevelText;
 
+    private bool canGoToNextLevel;
+
     void Start()
     {
         nextLevelText.enabled = false;
+        canGoToNextLevel = false;
     }
+
+    void Update()
+    {
+        if (canGoToNextLevel && Input.GetKeyDown(KeyCode.E))
+        {
+            gameManager.GetComponent<GameManagerLevelTransition>().playNextLevel();
+        }
+
+    }
+        
 
     void OnTriggerEnter (Collider other)
     {
         if (other.tag == "Player")
         {
             nextLevelText.enabled = true;
-
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                gameManager.GetComponent<GameManagerLevelTransition>().playNextLevel();
-            }
+            canGoToNextLevel = true;
 
         }
 
@@ -33,6 +42,7 @@ public class NearFrontDoor : MonoBehaviour {
         if (other.tag == "Player")
         {
             nextLevelText.enabled = false;
+            canGoToNextLevel = false;
         }
     }
 }

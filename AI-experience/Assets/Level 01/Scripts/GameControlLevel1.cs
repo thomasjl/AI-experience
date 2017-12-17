@@ -21,7 +21,7 @@ public class GameControlLevel1 : MonoBehaviour {
 
 	public Texture2D hand_cursor;
 
-	string intro_message = "28 JUIN 1942.\n\nVOUS AVEZ MIS LA MAIN SUR UNE MACHINE D'ENCRYPTAGE ALLEMANDE ENIGMA.\n\nVOTRE MISSION EST DE L'UTILISER AFIN DE DECODER LE MESSAGE INTERCEPTE PAR LA RESISTANCE.\n\nDES VIES SONT EN JEU, FAITES VITE !";
+	string intro_message = "28 juin 1942.\n\nvous avez mis la main sur une machine d'encryptage allemande enigma.\\n\\nvotre mission est de l'utiliser afin de décoder le message intercepté par la résistance.\\n\\ndes vies sont en jeu, faites vite !".ToUpper ();
 
 	public ProblemInstance problem_instance;
 

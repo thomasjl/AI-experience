@@ -613,12 +613,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1725263235}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.3925, y: -34.25}
-  m_SizeDelta: {x: 22.695, y: 16.77}
+  m_AnchoredPosition: {x: -7.37, y: -34.25}
+  m_SizeDelta: {x: 14.74, y: 16.77}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &262887278
 MonoBehaviour:
@@ -1078,7 +1078,7 @@ RectTransform:
   m_Children:
   - {fileID: 401375949}
   m_Father: {fileID: 1725263235}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2116,7 +2116,7 @@ RectTransform:
   m_Children:
   - {fileID: 2044333459}
   m_Father: {fileID: 1725263235}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2440,11 +2440,11 @@ MonoBehaviour:
     m_MaxSize: 40
     m_Alignment: 3
     m_AlignByGeometry: 0
-    m_RichText: 1
+    m_RichText: 0
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CALIBREZ CORRECTEMENT LA MACHINE POUR DECRYPTER LE MESSAGE
+  m_Text: "CALIBREZ CORRECTEMENT LA MACHINE POUR D\xC9CRYPTER LE MESSAGE"
 --- !u!222 &779292858
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2518,17 +2518,18 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "INFORMATIONS DETAILLES AU SUJET DE LA MACHINE ENIGMA ET DU FONCTIONNNEMENT
+  m_Text: "INFORMATIONS D\xC9TAILL\xC9ES AU SUJET DE LA MACHINE ENIGMA ET DU FONCTIONNNEMENT
     DES ROTORS\n\nLa machine que vous avez entre les mains poss\xE8de 4 rotors. Chaque
     rotor est calibr\xE9 par un nombre et effectue un d\xE9cryptage lettre par lettre
-    en fonction de ce nombre.\n\nPar exemple, s'il y a un seul rotor, et que sa valeur
-    de calibrage est 0, il d\xE9cryptera \"A\" en \"A\". Si sa valeur de calibrage
-    est 1, alors \"A\" devient \"B\". Si on le calibre avec 5, alors \"A\" devient
-    \"F, etc.\n\nQuand il y a plusieurs rotors, chaque rotor passe le r\xE9sultat
-    de son d\xE9cryptage au rotor suivant jusqu'\xE0 arriver au dernier rotor.\n\nLorsque
-    vous tapez sur la machine \xE0 l'aide de votre clavier, vous ne voyez que le r\xE9sultat
-    final, les d\xE9cryptages interm\xE9diaires sont invisibles. Vous ne pourrez d\xE9coder
-    le message allemand que si l'ensemble des 4 rotors de la machine sont bien calibr\xE9s."
+    en fonction de ce nombre :\n   - par exemple, s'il y a un seul rotor, et que sa
+    valeur de \n   calibrage est 0, il d\xE9cryptera \"A\" en \"A\".\n   - si sa valeur
+    de calibrage est 1, alors \"A\" devient \"B\".\n   - si on le calibre avec 5,
+    alors \"A\" devient \"F\", etc.\n\nQuand il y a plusieurs rotors, chaque rotor
+    passe le r\xE9sultat de son d\xE9cryptage au rotor suivant jusqu'\xE0 arriver
+    au dernier rotor.\n\nLorsque vous tapez sur la machine \xE0 l'aide de votre clavier,
+    vous ne voyez que le r\xE9sultat final, les d\xE9cryptages interm\xE9diaires sont
+    invisibles. Vous ne pourrez d\xE9coder le message allemand que si l'ensemble des
+    4 rotors de la machine sont bien calibr\xE9s."
 --- !u!222 &807970783
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2640,7 +2641,7 @@ RectTransform:
   m_Children:
   - {fileID: 1761912462}
   m_Father: {fileID: 1725263235}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2901,11 +2902,11 @@ RectTransform:
   m_Children:
   - {fileID: 2143484350}
   m_Father: {fileID: 1725263235}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 20.5, y: -34.8}
+  m_AnchoredPosition: {x: 12.465, y: -34.8}
   m_SizeDelta: {x: 24.93, y: 13.31}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &872657110
@@ -3088,12 +3089,12 @@ RectTransform:
   m_Children:
   - {fileID: 1731716672}
   m_Father: {fileID: 1725263235}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 49.035007, y: -34.8}
-  m_SizeDelta: {x: 32.14, y: 13.31}
+  m_AnchoredPosition: {x: 46.02, y: -34.8}
+  m_SizeDelta: {x: 42.18, y: 13.31}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &882361157
 MonoBehaviour:
@@ -4154,7 +4155,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1725263235}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4636,7 +4637,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1725263235}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4756,6 +4757,80 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 
+--- !u!1 &1662953359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1662953362}
+  - component: {fileID: 1662953361}
+  - component: {fileID: 1662953360}
+  m_Layer: 5
+  m_Name: WrongAnswer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1662953360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1662953359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9632353, g: 0.035413038, b: 0.035413038, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 59ed1e4e75c9b4b36b0155a5c987e142, type: 3}
+    m_FontSize: 5
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1662953361
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1662953359}
+--- !u!224 &1662953362
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1662953359}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1725263235}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -4.7400017, y: -17.43}
+  m_SizeDelta: {x: 103.32, y: 11.66}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1705872702
 GameObject:
   m_ObjectHideFlags: 0
@@ -5061,6 +5136,8 @@ RectTransform:
   m_Children:
   - {fileID: 522293537}
   - {fileID: 1933204344}
+  - {fileID: 1662953362}
+  - {fileID: 2026311683}
   - {fileID: 1381150849}
   - {fileID: 1592064715}
   - {fileID: 262887277}
@@ -5091,6 +5168,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saved_text: {fileID: 1933204346}
+  right_answer: {fileID: 2026311681}
+  wrong_answer: {fileID: 1662953360}
   enigm: {fileID: 1381150850}
   answer: {fileID: 262887278}
   game_control_level_1: {fileID: 1087092189}
@@ -5165,7 +5244,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: RETOUR
+  m_Text: CONTINUER
 --- !u!222 &1731716674
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5440,8 +5519,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.74, y: 2.12}
-  m_SizeDelta: {x: 103.32, y: 50.76}
+  m_AnchoredPosition: {x: -4.74, y: 7.949999}
+  m_SizeDelta: {x: 103.32, y: 39.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1933204346
 MonoBehaviour:
@@ -5455,7 +5534,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5927694, g: 0.8455882, b: 0.5720155, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5819,7 +5898,7 @@ RectTransform:
   m_Children:
   - {fileID: 821797807}
   m_Father: {fileID: 1725263235}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5975,6 +6054,80 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!1 &2026311680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2026311683}
+  - component: {fileID: 2026311682}
+  - component: {fileID: 2026311681}
+  m_Layer: 5
+  m_Name: RightAnswer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2026311681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2026311680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5927694, g: 0.8455882, b: 0.5720155, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 59ed1e4e75c9b4b36b0155a5c987e142, type: 3}
+    m_FontSize: 5
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &2026311682
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2026311680}
+--- !u!224 &2026311683
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2026311680}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1725263235}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -4.7400017, y: -17.43}
+  m_SizeDelta: {x: 103.32, y: 11.66}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2044333458
 GameObject:
   m_ObjectHideFlags: 0
@@ -6418,6 +6571,7 @@ GameObject:
   - component: {fileID: 2100062597}
   - component: {fileID: 2100062596}
   - component: {fileID: 2100062595}
+  - component: {fileID: 2100062598}
   m_Layer: 5
   m_Name: HelpEnigmButton
   m_TagString: Untagged
@@ -6436,7 +6590,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1725263235}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6462,8 +6616,8 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.5927694, g: 0.8455882, b: 0.5720155, a: 1}
+    m_NormalColor: {r: 0.5927694, g: 0.8455882, b: 0.5720155, a: 1}
+    m_HighlightedColor: {r: 0.14285682, g: 0.9485294, b: 0.07671931, a: 1}
     m_PressedColor: {r: 0, g: 0.3019608, b: 0, a: 1}
     m_DisabledColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     m_ColorMultiplier: 1
@@ -6528,6 +6682,70 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2100062593}
+--- !u!114 &2100062598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2100062593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 747518233}
+          m_MethodName: ChangeCursorToHand
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 747518233}
+          m_MethodName: ChangeCursorToNormal
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 747518233}
+          m_MethodName: ChangeCursorToNormal
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &2143484349
 GameObject:
   m_ObjectHideFlags: 0

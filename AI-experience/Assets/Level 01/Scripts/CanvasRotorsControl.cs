@@ -5,8 +5,9 @@ using UnityEngine.UI;
 
 public class CanvasRotorsControl : MonoBehaviour {
 
-
 	public Text saved_text;
+	public Text right_answer;
+	public Text wrong_answer;
 	public Text enigm;
 	public Text answer;
 	public GameControlLevel1 game_control_level_1;
@@ -26,6 +27,8 @@ public class CanvasRotorsControl : MonoBehaviour {
 	void Start () {
 		this.button_help_enigm.interactable = false;
 		this.saved_text.enabled = false;
+		this.right_answer.enabled = false;
+		this.wrong_answer.enabled = false;
 		this.enigm_texts = game_control_level_1.problem_instance.enigm_texts;
 		this.enigm_answers = game_control_level_1.problem_instance.enigm_answers;
 		this.enigm_player_answers = game_control_level_1.problem_instance.enigm_player_answers;
@@ -49,9 +52,12 @@ public class CanvasRotorsControl : MonoBehaviour {
 				this.answer.text = this.answer.text.Substring (0, this.answer.text.Length - 1);
 			}
 		}
+		else if (Input.GetKeyDown (KeyCode.Return)) {
+			this.SaveAnswer ();
+		}
 
 
-		if (this.try_counter [this.current_enigm_number] > 3) {
+		if (this.try_counter [this.current_enigm_number] >= 3) {
 			this.button_help_enigm.interactable = true;
 		} else {
 			this.button_help_enigm.interactable = false;
@@ -60,6 +66,8 @@ public class CanvasRotorsControl : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.Mouse0)) {
 			if (this.saved_text.enabled) {
 				this.saved_text.enabled = false;
+				this.right_answer.enabled = false;
+				this.wrong_answer.enabled = false;
 				this.enigm.enabled = true;
 			}
 		}
@@ -85,23 +93,27 @@ public class CanvasRotorsControl : MonoBehaviour {
 	public void SaveAnswer() {
 		if (this.answer.text == "") {
 			string saved_message = "Vous devez répondre à l'énigme à l'aide de votre clavier avant de sauvegarder la valeur et ainsi calibrer le rotor";
-			StartCoroutine (ShowSavedMessage (saved_message, 4));
+			StartCoroutine (ShowMessage (saved_message, 4));
 		}
 		else {
 			this.enigm_player_answers [this.current_enigm_number] = this.answer.text;
 			this.UpdateRotorValue ();
-			this.try_counter [this.current_enigm_number]++;
 			string saved_message = "Le rotor numéro " + (this.current_enigm_number + 1) + " a bien été calibré avec la valeur " + this.answer.text + ".";
 			if (this.enigm_player_answers [this.current_enigm_number] == this.enigm_answers [this.current_enigm_number]) {
-				saved_message = saved_message + "\n\n" + "PS : Ceci est la bonne réponse";
+				StartCoroutine (ShowSavedMessage (saved_message, true, 3));
 			} else {
-				saved_message = saved_message + "\n\n" + "PS : Ceci n'est pas la bonne réponse";
+				this.try_counter [this.current_enigm_number]++;
+				StartCoroutine (ShowSavedMessage (saved_message, false, 3));
 			}
-			StartCoroutine (ShowSavedMessage (saved_message, 3));
 		}
 	}
 
-	IEnumerator ShowSavedMessage (string message, float delay) {
+	public void GetHelpForEnigm(){
+		string message = "La réponse est " + this.enigm_answers [this.current_enigm_number];
+		StartCoroutine (ShowMessage (message, 2));
+	}
+
+	IEnumerator ShowMessage (string message, float delay) {
 		this.saved_text.text = message;
 		this.enigm.enabled = false;
 		this.saved_text.enabled = true;
@@ -111,10 +123,31 @@ public class CanvasRotorsControl : MonoBehaviour {
 	}
 
 
-	public void GetHelpForEnigm(){
-		string message = "La réponse est " + this.enigm_answers [this.current_enigm_number];
-		StartCoroutine (ShowSavedMessage (message, 2));
+	IEnumerator ShowSavedMessage (string message, bool correct_answer, float delay) {
+		Text tip;
+		string tip_message;
+		if (correct_answer) {
+			tip = this.right_answer;
+			this.wrong_answer.enabled = false;
+			tip_message = "PS : Ceci est la bonne réponse";
+		} else {
+			tip = this.wrong_answer;
+			this.right_answer.enabled = false;
+			tip_message = "PS : Ceci n'est pas la bonne réponse";
+		}
+		this.saved_text.text = message;
+		tip.text = tip_message;
+		this.enigm.enabled = false;
+		this.saved_text.enabled = true;
+		tip.enabled = true;
+		yield return new WaitForSeconds(delay);
+		this.saved_text.enabled = false;
+		tip.enabled = false;
+		this.enigm.enabled = true;
 	}
+
+
+
 
 
 	public void UpdateRotorValue() {

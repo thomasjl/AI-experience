@@ -5,6 +5,6 @@ using UnityEngine;
 public class GlobalVariables : MonoBehaviour {
 
     public static string previousLevel;
-    public static GameObject currentLevel;
-    public static GameObject nextLevel;
+    public static string currentLevel;
+    public static string nextLevel;
 }

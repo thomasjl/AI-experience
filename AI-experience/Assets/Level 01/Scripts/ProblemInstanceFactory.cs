@@ -8,7 +8,7 @@ public class ProblemInstanceFactory {
 	
 
 	public ProblemInstance GetDemoProblemInstance() {
-		string s = "LONDON THE THIRD NINE AM BE PREPARED";
+		string s = "PARIS NOTRE DAME FIN OCTOBRE SOYEZ PRETS";
 		string[] enigm_texts = new string[]{
 			"Bernard a 4 ans et sa soeur a la moitié de son âge.\nQuelle âge a la soeur de Bernard si Bernard a 40 ans ?", 
 			"Combien d'allumettes faut-il pour faire 4 triangles équilatéraux de côté une allumette ?", 

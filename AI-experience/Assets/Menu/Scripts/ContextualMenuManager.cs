@@ -14,6 +14,9 @@ public class ContextualMenuManager : MonoBehaviour {
     //private GameObject cam;
 
     public GameObject fpsController;
+	public GameObject homeMadeCamera;
+
+	private bool cursorInitiallyVisible;
 
 
     void Start()
@@ -36,12 +39,12 @@ public class ContextualMenuManager : MonoBehaviour {
 
                 openMenuContextual();
                 // jeu en pause
-                //Time.timeScale = 0;
+                Time.timeScale = 0;
             }
             else
             {
                 closeMenuContextual();
-                //Time.timeScale = 1;
+                Time.timeScale = 1;
             }
 
         }
@@ -49,17 +52,20 @@ public class ContextualMenuManager : MonoBehaviour {
 
     public void resumeButton()
     {
+		Time.timeScale = 1;
         Debug.Log("resume button");
         closeMenuContextual();
     }
 
     public void reloadButton()
     {
+		Time.timeScale = 1;
         SceneManager.LoadScene("Level Transition");
     }
 
     public void returnToMenu()
     {
+		Time.timeScale = 1;
         SceneManager.LoadScene("Homepage");
     }
 
@@ -69,8 +75,11 @@ public class ContextualMenuManager : MonoBehaviour {
 
         //menuCam.SetActive(true);
 
+		cursorInitiallyVisible = Cursor.visible;
+
         contextualMenu.SetActive(true);
         contextualMenuOpen = true;
+		Cursor.visible = true;
 
         if (fpsController != null)
         {
@@ -79,9 +88,14 @@ public class ContextualMenuManager : MonoBehaviour {
             fpsController.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.lockCursor = false;
             fpsController.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.XSensitivity = 0;
             fpsController.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.YSensitivity = 0;
-            Cursor.visible = true;
 
         }
+
+		if (homeMadeCamera != null) 
+		{
+			homeMadeCamera.GetComponent<Main_Camera> ().speedH = 0.0f;
+			homeMadeCamera.GetComponent<Main_Camera> ().speedV = 0.0f;
+		}
        
                          
                
@@ -100,17 +114,22 @@ public class ContextualMenuManager : MonoBehaviour {
 
         contextualMenu.SetActive(false);
 
+		if (!cursorInitiallyVisible)
+			Cursor.visible = false;
+
         if (fpsController != null)
         {
             fpsController.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.lockCursor = true;
             fpsController.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.XSensitivity = 2f;
             fpsController.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.YSensitivity = 2f;
-            Cursor.visible = false;
-
 
         }
 
-
+		if (homeMadeCamera != null) 
+		{
+			homeMadeCamera.GetComponent<Main_Camera> ().speedH = 2.0f;
+			homeMadeCamera.GetComponent<Main_Camera> ().speedV = 2.0f;
+		}
            
       
        

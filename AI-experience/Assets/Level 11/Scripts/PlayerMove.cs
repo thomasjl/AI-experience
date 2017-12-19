@@ -42,6 +42,8 @@ public class PlayerMove : MonoBehaviour {
             listTarget[i] = child.gameObject;
             i++;
         }
+
+		Cursor.visible = false;
 			  
     }
 

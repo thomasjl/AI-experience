@@ -2518,7 +2518,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "INFORMATIONS D\xC9TAILL\xC9ES AU SUJET DE LA MACHINE ENIGMA ET DU FONCTIONNNEMENT
+  m_Text: "INFORMATIONS D\xC9TAILL\xC9ES AU SUJET DE LA MACHINE ENIGMA ET DU FONCTIONNEMENT
     DES ROTORS\n\nLa machine que vous avez entre les mains poss\xE8de 4 rotors. Chaque
     rotor est calibr\xE9 par un nombre et effectue un d\xE9cryptage lettre par lettre
     en fonction de ce nombre :\n   - par exemple, s'il y a un seul rotor, et que sa
@@ -5268,7 +5268,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1746248036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5578,7 +5578,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1953207664
 MonoBehaviour:
   m_ObjectHideFlags: 0

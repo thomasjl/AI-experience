@@ -44,10 +44,7 @@ public class CanvasRotorsControl : MonoBehaviour {
 			}
 		}
 
-		if (Input.GetKeyDown (KeyCode.Escape)) {
-			game_control_level_1.SwitchToCanvasRoom();
-		} 
-		else if (Input.GetKeyDown (KeyCode.Backspace)) {
+		if (Input.GetKeyDown (KeyCode.Backspace)) {
 			if (this.answer.text.Length > 0) {
 				this.answer.text = this.answer.text.Substring (0, this.answer.text.Length - 1);
 			}

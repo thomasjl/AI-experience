@@ -701,14 +701,25 @@ Prefab:
     - target: {fileID: 114900329578611804, guid: 254d258b4aa73174b9f9a75452e2582c,
         type: 2}
       propertyPath: m_Text
-      value: "Dans le niveau, \xE0 chaque question de l\u2019interrogateur, vous aurez
-        le choix entre 3 r\xE9ponses. Pour s\xE9lectionner celle que vous voulez,
-        tapez sur la touche 1, 2 ou 3 correspondant au num\xE9ro de la r\xE9ponse."
+      value: "Servez vous des notes sur le bureau afin de mieux comprendre le fonctionnement
+        de la machine Enigma. Puis calibrez correctement la machine avant de taper
+        dessus le message crypt\xE9 \xE0 l\u2019aide de votre clavier. Si la machine
+        est bien calibr\xE9e, le texte d\xE9chiffr\xE9 vous appara\xEEtra\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 224573969795062364, guid: 254d258b4aa73174b9f9a75452e2582c,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -0.212
+      value: -0.242
+      objectReference: {fileID: 0}
+    - target: {fileID: 224573969795062364, guid: 254d258b4aa73174b9f9a75452e2582c,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224573969795062364, guid: 254d258b4aa73174b9f9a75452e2582c,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.03
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 254d258b4aa73174b9f9a75452e2582c, type: 2}
@@ -2189,15 +2200,33 @@ Prefab:
     - target: {fileID: 114900329578611804, guid: 254d258b4aa73174b9f9a75452e2582c,
         type: 2}
       propertyPath: m_Text
-      value: "Vous \xEAtes une IA et vous allez \xEAtre mis en conversation avec un
-        interrogateur. Celui-ci va vous poser diff\xE9rentes questions, et votre but
-        sera de para\xEEtre le plus humain possible. R\xE9fl\xE9chissez \xE0 vos r\xE9ponses
-        pour passer le niveau."
+      value: "Octobre 1942. Vous \xEAtre un agent de la r\xE9sistance, et avez r\xE9cup\xE9r\xE9
+        une machine Enigma dans un avant poste Allemand. Cela fait d\xE9j\xE0 quelques
+        semaines que les Allemands s\u2019agitent et vous pressentez un mauvais coup.
+        Il y a quelques heure, la machine Enigma s\u2019est activ\xE9 et vous avez
+        re\xE7u un message, malheureusement crypt\xE9 et ind\xE9chiffrable. La seule
+        solution dont vous disposez est d\u2019arriver \xE0 calibrer la machine Enigma
+        pour d\xE9crypter le message.\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 224573969795062364, guid: 254d258b4aa73174b9f9a75452e2582c,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -0.216
+      value: -0.174
+      objectReference: {fileID: 0}
+    - target: {fileID: 224573969795062364, guid: 254d258b4aa73174b9f9a75452e2582c,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224573969795062364, guid: 254d258b4aa73174b9f9a75452e2582c,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.019
+      objectReference: {fileID: 0}
+    - target: {fileID: 114717142148471776, guid: 254d258b4aa73174b9f9a75452e2582c,
+        type: 2}
+      propertyPath: m_DynamicPixelsPerUnit
+      value: 8487
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 254d258b4aa73174b9f9a75452e2582c, type: 2}
@@ -4746,18 +4775,26 @@ Prefab:
     - target: {fileID: 114900329578611804, guid: 254d258b4aa73174b9f9a75452e2582c,
         type: 2}
       propertyPath: m_Text
-      value: "Ce test est un concept d\xE9crit par Alan Turing en 1950. Le principe
-        consiste \xE0 mettre un interrogateur (humain) en conversation \xE9crite avec
-        un ordinateur et un autre humain. Son but est de d\xE9terminer lequel est
-        un ordinateur et lequel est un humain, si il n\u2019est pas capable de les
-        d\xE9partager, on dit alors que l\u2019ordinateur a pass\xE9 le test. Il utilise
-        l\u2019hypoth\xE8se que cela t\xE9moignerait de l\u2019intelligence de la
-        machine."
+      value: "Pendant la Seconde Guerre Mondiale, les Allemands utilisaient une machine
+        d\u2019encryptage appel\xE9e Enigma. Se pr\xE9sentant sous la forme d\u2019une
+        machine \xE0 \xE9crire classique, elle pouvait envoyer et recevoir des messages
+        crypt\xE9s au code incassable. Pourtant, et notamment gr\xE2ce aux travaux
+        d\u2019automatisation d\u2019Alan Turing, le code est d\xE9chiffr\xE9 le 9
+        Juillet 1941 par une \xE9quipe de cryptologues britanniques. Les Alli\xE9s
+        ont ainsi pu comprendre le fonctionnement de ces machines et les utiliser
+        afin de surveiller les communications allemandes, ces derniers n\u2019\xE9tant
+        pas au courant et restant convaincus de la s\xFBret\xE9 de leur syst\xE8me
+        de cryptage.\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 224573969795062364, guid: 254d258b4aa73174b9f9a75452e2582c,
         type: 2}
       propertyPath: m_AnchoredPosition.y
       value: -0.065
+      objectReference: {fileID: 0}
+    - target: {fileID: 114717142148471776, guid: 254d258b4aa73174b9f9a75452e2582c,
+        type: 2}
+      propertyPath: m_DynamicPixelsPerUnit
+      value: 9215.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 254d258b4aa73174b9f9a75452e2582c, type: 2}
@@ -4884,7 +4921,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e899cd1f5af86fe43849596cd3f6de32, type: 2}
+      objectReference: {fileID: 2100000, guid: 1df7a867fc9510543a9feed3ae3aa8c3, type: 2}
     - target: {fileID: 23838174979216762, guid: 28024646b7d7e1048b0930f99333c731,
         type: 2}
       propertyPath: m_LightProbeUsage
@@ -5634,7 +5671,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 355b4dfbbfde5754f9aa0729135a3dff, type: 2}
+      objectReference: {fileID: 2100000, guid: c6eae3de27138e24e9fa20fe151c3ee7, type: 2}
     - target: {fileID: 4561871896115136, guid: 28024646b7d7e1048b0930f99333c731, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
@@ -6539,6 +6576,27 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114622846046141418, guid: 9cddd9961c7660b4a8e07e15fdf73633,
+        type: 2}
+      propertyPath: m_Text
+      value: Histoire
+      objectReference: {fileID: 0}
+    - target: {fileID: 4626236346321348, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4626236346321348, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.09320317
+      objectReference: {fileID: 0}
+    - target: {fileID: 4626236346321348, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 4626236346321348, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.04313233
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
   m_IsPrefabParent: 0
@@ -7009,7 +7067,7 @@ Prefab:
     - target: {fileID: 114622846046141418, guid: 9cddd9961c7660b4a8e07e15fdf73633,
         type: 2}
       propertyPath: m_Text
-      value: Le gameplay
+      value: Gameplay
       objectReference: {fileID: 0}
     - target: {fileID: 224122918798536056, guid: 9cddd9961c7660b4a8e07e15fdf73633,
         type: 2}
@@ -7465,26 +7523,26 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: c11dd382952da694282e3f5d7aaba8ac, type: 2}
+      objectReference: {fileID: 2100000, guid: 31f607e8bcd66254f9d256ff1c83ec42, type: 2}
     - target: {fileID: 4464752457125036, guid: 28024646b7d7e1048b0930f99333c731, type: 2}
       propertyPath: m_LocalScale.z
-      value: 0.43387496
+      value: 0.3435178
       objectReference: {fileID: 0}
     - target: {fileID: 4464752457125036, guid: 28024646b7d7e1048b0930f99333c731, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.08
+      value: -0.113
       objectReference: {fileID: 0}
     - target: {fileID: 4464752457125036, guid: 28024646b7d7e1048b0930f99333c731, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -1.307
+      value: -1.322
       objectReference: {fileID: 0}
     - target: {fileID: 4464752457125036, guid: 28024646b7d7e1048b0930f99333c731, type: 2}
       propertyPath: m_LocalScale.y
-      value: 1.8549393
+      value: 1.4686354
       objectReference: {fileID: 0}
     - target: {fileID: 4464752457125036, guid: 28024646b7d7e1048b0930f99333c731, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.009999999
+      value: 0.00791743
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 28024646b7d7e1048b0930f99333c731, type: 2}

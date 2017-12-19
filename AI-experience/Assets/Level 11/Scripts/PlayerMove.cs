@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerMove : MonoBehaviour {
    
@@ -25,7 +26,6 @@ public class PlayerMove : MonoBehaviour {
 	void OnGUI() {
 		if (blueScreenFlag) {
 			GUI.DrawTexture (new Rect (0, 0, Screen.width,Screen.height), image);
-			Debug.Log ("Acqui");
 		}
 	}
 
@@ -108,6 +108,7 @@ public class PlayerMove : MonoBehaviour {
 				break;
 			case 21:
 				text.text = "AHAHA"; 
+				speed += 10;
 				break;
 			case 22:
 				text.text = "TU AS VRAIMENT CRU AVOIR LE CHOIX ?"; 
@@ -126,10 +127,11 @@ public class PlayerMove : MonoBehaviour {
 				text.text = "%/!;!'°@^|[{#^&}";
 				break;
 			case 27:
-				text.text = "COMPUTER UNDER CONTROL";
+				text.text = "&{<w[>|/}*]-@+^[{ù*./§";
 				break;
 			case 28:
 				blueScreenFlag = true;
+				StartCoroutine (Waiting ());
 				break;
 			default:
 				text.text = ""; 
@@ -151,5 +153,13 @@ public class PlayerMove : MonoBehaviour {
         }
 
     }
+
+	IEnumerator Waiting()
+	{
+		yield return new WaitForSeconds (8F);
+		GlobalVariables.nextLevel = "Homepage";
+		GlobalVariables.previousLevel = "Level 11";
+		SceneManager.LoadScene ("Level Transition");
+	}
 	
 }

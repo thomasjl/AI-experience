@@ -13,7 +13,16 @@ public class Ladder : MonoBehaviour {
     void Start()
     {     
         player = GameObject.FindGameObjectWithTag("Player");
-        startSpeed = player.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_WalkSpeed;
+
+        if (player != null)
+        {
+            if (player.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>()!=null)
+            {
+                startSpeed = player.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_WalkSpeed;
+            }
+        }
+
+
 
     }
 

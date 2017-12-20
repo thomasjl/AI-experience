@@ -21,7 +21,11 @@ public class EndManager : MonoBehaviour {
         if (other.tag == "Player")
         {
             endUIPanel.SetActive(true);
-            player.SetActive(false);
+            //player.SetActive(false);
+
+            GameObject.FindGameObjectWithTag("Player").GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().enabled = false;
+            player.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.lockCursor = false;
+            Cursor.visible = true;
         }
     }
 

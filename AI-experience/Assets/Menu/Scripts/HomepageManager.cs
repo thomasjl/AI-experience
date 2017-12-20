@@ -16,6 +16,15 @@ public class HomepageManager : MonoBehaviour {
         }
     }
 
+    void Update()
+    {
+        if (!Cursor.visible)
+        {
+            Cursor.visible = true;
+        }
+    }
+
+
     public void selectNewGame()
     {
         GlobalVariables.nextLevel = "Level 01";

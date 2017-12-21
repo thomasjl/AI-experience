@@ -841,7 +841,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 476cff7f3e7e6c2418ee2c8048c7308a, type: 2}
+      objectReference: {fileID: 2100000, guid: 353788aefb8cae845bec56e8b12fe4e0, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 28024646b7d7e1048b0930f99333c731, type: 2}
   m_IsPrefabParent: 0
@@ -1501,7 +1501,18 @@ Prefab:
     - target: {fileID: 114717142148471776, guid: 254d258b4aa73174b9f9a75452e2582c,
         type: 2}
       propertyPath: m_DynamicPixelsPerUnit
-      value: 4821
+      value: 7500
+      objectReference: {fileID: 0}
+    - target: {fileID: 114900329578611804, guid: 254d258b4aa73174b9f9a75452e2582c,
+        type: 2}
+      propertyPath: m_Text
+      value: "Vous pourrez choisir les directions que vous donnerez au futur de l\u2019IA
+        en tapant les lettres \u2018G\u2019 pour Gauche ou \u2018D\u2019 pour Droite."
+      objectReference: {fileID: 0}
+    - target: {fileID: 224173099849518836, guid: 254d258b4aa73174b9f9a75452e2582c,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.637
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 254d258b4aa73174b9f9a75452e2582c, type: 2}
@@ -1610,6 +1621,106 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1001 &363779039
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 497910375}
+    m_Modifications:
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.0059051514
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.31746292
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.548996
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.20932
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.27664
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073367168929362, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_Name
+      value: Title (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114622846046141418, guid: 9cddd9961c7660b4a8e07e15fdf73633,
+        type: 2}
+      propertyPath: m_Text
+      value: Le futur de l'IA
+      objectReference: {fileID: 0}
+    - target: {fileID: 224122918798536056, guid: 9cddd9961c7660b4a8e07e15fdf73633,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 224122918798536056, guid: 9cddd9961c7660b4a8e07e15fdf73633,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: -0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 224122918798536056, guid: 9cddd9961c7660b4a8e07e15fdf73633,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224122918798536056, guid: 9cddd9961c7660b4a8e07e15fdf73633,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.334
+      objectReference: {fileID: 0}
+    - target: {fileID: 224122918798536056, guid: 9cddd9961c7660b4a8e07e15fdf73633,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0.603
+      objectReference: {fileID: 0}
+    - target: {fileID: 4626236346321348, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 4626236346321348, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.666
+      objectReference: {fileID: 0}
+    - target: {fileID: 4626236346321348, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.18652524
+      objectReference: {fileID: 0}
+    - target: {fileID: 4626236346321348, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.045643337
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &403389524
 GameObject:
   m_ObjectHideFlags: 0
@@ -2234,7 +2345,22 @@ Prefab:
     - target: {fileID: 114717142148471776, guid: 254d258b4aa73174b9f9a75452e2582c,
         type: 2}
       propertyPath: m_DynamicPixelsPerUnit
-      value: 4821
+      value: 8056
+      objectReference: {fileID: 0}
+    - target: {fileID: 114900329578611804, guid: 254d258b4aa73174b9f9a75452e2582c,
+        type: 2}
+      propertyPath: m_Text
+      value: "L\u2019IA est un des domaines qui donne lieu \xE0 de nombreuses sp\xE9culations.
+        Allant de celles, tr\xE8s optimistes, qui pensent que l\u2019IA va nous permettre
+        de vivre une vie de meilleur, et celles qui craignent des d\xE9rives. Depuis
+        quelques ann\xE9es, Stephen Hawking, Elen Musk and Bill Gates ont lev\xE9
+        des inqui\xE9tudes sur l\u2019intelligence artificielle et incitent \xE0 lancer
+        la r\xE9flexion sur son avenir et ses risques. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 224173099849518836, guid: 254d258b4aa73174b9f9a75452e2582c,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.556
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 254d258b4aa73174b9f9a75452e2582c, type: 2}
@@ -2433,7 +2559,7 @@ Prefab:
       value: "Octobre 1942. Vous \xEAtre un agent de la r\xE9sistance, et avez r\xE9cup\xE9r\xE9
         une machine Enigma dans un avant poste Allemand. Cela fait d\xE9j\xE0 quelques
         semaines que les Allemands s\u2019agitent et vous pressentez un mauvais coup.
-        Il y a quelques heure, la machine Enigma s\u2019est activ\xE9 et vous avez
+        Il y a quelques heure, la machine Enigma s\u2019est activ\xE9e et vous avez
         re\xE7u un message, malheureusement crypt\xE9 et ind\xE9chiffrable. La seule
         solution dont vous disposez est d\u2019arriver \xE0 calibrer la machine Enigma
         pour d\xE9crypter le message.\r\n"
@@ -4229,7 +4355,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b9fd9c5e06bd8d547b0e5175c53f1be4, type: 2}
+      objectReference: {fileID: 2100000, guid: 1cbc481ad6fcdea41aa84ee75f87747c, type: 2}
     - target: {fileID: 4561871896115136, guid: 28024646b7d7e1048b0930f99333c731, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
@@ -6477,6 +6603,75 @@ Transform:
   m_PrefabParentObject: {fileID: 4561871896115136, guid: 28024646b7d7e1048b0930f99333c731,
     type: 2}
   m_PrefabInternal: {fileID: 1720596528}
+--- !u!1001 &1720679887
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1735795673}
+    m_Modifications:
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.00799942
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.230999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.48600006
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073367168929362, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_Name
+      value: Title (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.20932
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.27664
+      objectReference: {fileID: 0}
+    - target: {fileID: 114622846046141418, guid: 9cddd9961c7660b4a8e07e15fdf73633,
+        type: 2}
+      propertyPath: m_Text
+      value: Le niveau
+      objectReference: {fileID: 0}
+    - target: {fileID: 224122918798536056, guid: 9cddd9961c7660b4a8e07e15fdf73633,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224122918798536056, guid: 9cddd9961c7660b4a8e07e15fdf73633,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.511
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1729696777
 GameObject:
   m_ObjectHideFlags: 0
@@ -6592,7 +6787,18 @@ Prefab:
     - target: {fileID: 114717142148471776, guid: 254d258b4aa73174b9f9a75452e2582c,
         type: 2}
       propertyPath: m_DynamicPixelsPerUnit
-      value: 4821
+      value: 7500
+      objectReference: {fileID: 0}
+    - target: {fileID: 114900329578611804, guid: 254d258b4aa73174b9f9a75452e2582c,
+        type: 2}
+      propertyPath: m_Text
+      value: "Dans ce niveau, vous serez amen\xE9 \xE0 faire des choix cruciaux pour
+        l\u2019avenir de l\u2019IA. Choisissez judicieusement. Le futur vous appartient."
+      objectReference: {fileID: 0}
+    - target: {fileID: 224173099849518836, guid: 254d258b4aa73174b9f9a75452e2582c,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.637
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 254d258b4aa73174b9f9a75452e2582c, type: 2}
@@ -6602,6 +6808,91 @@ Transform:
   m_PrefabParentObject: {fileID: 4541158448659756, guid: 254d258b4aa73174b9f9a75452e2582c,
     type: 2}
   m_PrefabInternal: {fileID: 1735795672}
+--- !u!1001 &1746540894
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 314946175}
+    m_Modifications:
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.012001038
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.24000168
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.43499756
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073367168929362, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_Name
+      value: Title (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.20932
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057861441327202, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.27664
+      objectReference: {fileID: 0}
+    - target: {fileID: 114622846046141418, guid: 9cddd9961c7660b4a8e07e15fdf73633,
+        type: 2}
+      propertyPath: m_Text
+      value: Gameplay
+      objectReference: {fileID: 0}
+    - target: {fileID: 224122918798536056, guid: 9cddd9961c7660b4a8e07e15fdf73633,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224122918798536056, guid: 9cddd9961c7660b4a8e07e15fdf73633,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.313
+      objectReference: {fileID: 0}
+    - target: {fileID: 4626236346321348, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 4626236346321348, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.13238883
+      objectReference: {fileID: 0}
+    - target: {fileID: 4626236346321348, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 4626236346321348, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.042828217
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 9cddd9961c7660b4a8e07e15fdf73633, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1770879208
 Prefab:
   m_ObjectHideFlags: 0
@@ -7832,10 +8123,9 @@ Prefab:
       value: "Ce test est un concept d\xE9crit par Alan Turing en 1950. Le principe
         consiste \xE0 mettre un interrogateur (humain) en conversation \xE9crite avec
         un ordinateur et un autre humain. Son but est de d\xE9terminer lequel est
-        un ordinateur et lequel est un humain, si il n\u2019est pas capable de les
-        d\xE9partager, on dit alors que l\u2019ordinateur a pass\xE9 le test. Il utilise
-        l\u2019hypoth\xE8se que cela t\xE9moignerait de l\u2019intelligence de la
-        machine."
+        un ordinateur et lequel est un humain. S'l n\u2019est pas capable de les d\xE9partager,
+        on dit alors que l\u2019ordinateur a pass\xE9 le test. Il fait l\u2019hypoth\xE8se
+        que cela t\xE9moignerait de l\u2019intelligence de la machine."
       objectReference: {fileID: 0}
     - target: {fileID: 224573969795062364, guid: 254d258b4aa73174b9f9a75452e2582c,
         type: 2}
@@ -8420,7 +8710,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b946101c88310b24a927995c004f9869, type: 2}
+      objectReference: {fileID: 2100000, guid: 85c396cda55482145a12aa5ff9c1e819, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 28024646b7d7e1048b0930f99333c731, type: 2}
   m_IsPrefabParent: 0

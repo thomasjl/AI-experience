@@ -80,6 +80,7 @@ public class ContextualMenuManager : MonoBehaviour {
         contextualMenu.SetActive(true);
         contextualMenuOpen = true;
 		Cursor.visible = true;
+		Cursor.lockState = CursorLockMode.None;
 
         if (fpsController != null)
         {

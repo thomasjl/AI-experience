@@ -2605,6 +2605,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &663709262 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+  m_PrefabInternal: {fileID: 663709261}
 --- !u!1 &666399326
 GameObject:
   m_ObjectHideFlags: 0
@@ -4277,6 +4281,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 114328230283516186, guid: a230cd22259e9d246b51e6b836edb88d,
+        type: 2}
+      propertyPath: fpsController
+      value: 
+      objectReference: {fileID: 663709262}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a230cd22259e9d246b51e6b836edb88d, type: 2}
   m_IsPrefabParent: 0

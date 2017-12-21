@@ -47,4 +47,9 @@ public class SelectLevelManager : MonoBehaviour {
         GlobalVariables.previousLevel = "NoReturn";
         SceneManager.LoadScene("Level Transition");
     }
+
+    public void goHomepage()
+    {
+        SceneManager.LoadScene("Homepage");
+    }
 }

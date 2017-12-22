@@ -70,6 +70,9 @@ public class GameControlLevel1 : MonoBehaviour {
 
 		this.SwitchToCanvasIntro ();
 		StartCoroutine(this.AnimateTextInto (this.intro_message));
+
+		Cursor.visible = true;
+		Cursor.lockState = CursorLockMode.None;
 	}
 	
 	// Update is called once per frame

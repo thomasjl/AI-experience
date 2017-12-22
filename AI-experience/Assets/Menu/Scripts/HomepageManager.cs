@@ -14,6 +14,8 @@ public class HomepageManager : MonoBehaviour {
         {
             loadLevelButton.GetComponent<Button>().interactable = false;
         }
+		Cursor.visible = true;
+		Cursor.lockState = CursorLockMode.None;
     }
 
     void Update()

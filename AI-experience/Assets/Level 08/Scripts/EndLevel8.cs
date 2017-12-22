@@ -24,6 +24,7 @@ public class EndLevel8 : MonoBehaviour {
             if (!printUi && GameObject.FindGameObjectWithTag("Camaro").gameObject.GetComponent<Rigidbody>().velocity.z <= 0.25)
             {
                 Cursor.visible = true;
+				Cursor.lockState = CursorLockMode.None;
                 printUi = true;
                 Debug.Log("print ui end level 8");
                 endUIToPrint.SetActive(true);

@@ -31,7 +31,8 @@ public class DisableFourthTask : MonoBehaviour {
                 lightings3.SetActive(false);
                 disableFourthTaskUi.SetActive(false);
                 uiPrinted = false;
-
+                MonoBehaviour scriptPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>();
+                scriptPlayer.enabled = true;
                 GameObject.FindGameObjectWithTag("Player").GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_WalkSpeed = 3;
             }
             else if (Input.GetKeyDown(KeyCode.Keypad2) || Input.GetKeyDown("2"))

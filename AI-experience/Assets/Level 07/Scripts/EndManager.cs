@@ -20,6 +20,9 @@ public class EndManager : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+
             endUIPanel.SetActive(true);
             //player.SetActive(false);
 

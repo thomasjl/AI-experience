@@ -80,6 +80,7 @@ public class ContextualMenuManager : MonoBehaviour {
         contextualMenu.SetActive(true);
         contextualMenuOpen = true;
 		Cursor.visible = true;
+		Cursor.lockState = CursorLockMode.None;
 
         if (fpsController != null)
         {
@@ -118,7 +119,9 @@ public class ContextualMenuManager : MonoBehaviour {
 			Cursor.visible = false;
 
         if (fpsController != null)
-        {
+        {          
+
+
             fpsController.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.lockCursor = true;
             fpsController.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.XSensitivity = 2f;
             fpsController.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().m_MouseLook.YSensitivity = 2f;

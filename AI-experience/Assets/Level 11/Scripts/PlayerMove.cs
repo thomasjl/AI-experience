@@ -159,9 +159,10 @@ public class PlayerMove : MonoBehaviour {
 	IEnumerator Waiting()
 	{
 		yield return new WaitForSeconds (8F);
-		GlobalVariables.nextLevel = "Homepage";
-		GlobalVariables.previousLevel = "Level 11";
-		SceneManager.LoadScene ("Level Transition");
+
+		//GlobalVariables.nextLevel = "Homepage";
+		//GlobalVariables.previousLevel = "Level 11";
+		SceneManager.LoadScene ("Homepage");
 	}
 	
 }
